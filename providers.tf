@@ -9,4 +9,12 @@ terraform {
       version = "3.6.0"
     }
   }
+  cloud {
+    organization = "ericreeves-demo"
+    hostname     = "app.terraform.io"
+
+    workspaces {
+      name = "azure-lab-app"
+    }
+  }
 }
